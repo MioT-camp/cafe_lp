@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Cafe - 森の湖畔のくつろぎカフェ</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">Green Cafe</div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">特徴</a></li>
+                <li><a href="#menu">メニュー</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Green Cafe</h1>
+            <p>森の湖畔のくつろぎカフェ</p>
+            <p class="hero-description">野鳥と湖の景色を感じることができる緑に囲まれたカフェです。</p>
+            <a href="#menu" class="cta-button">メニューを見る</a>
+        </div>
+    </section>
+
+    <!-- カフェの特徴 -->
+    <section id="features" class="features">
+        <h2>カフェの特徴</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <i class="fas fa-leaf"></i>
+                <h3>自然との調和</h3>
+                <p>緑豊かな環境で、心地よい風と鳥のさえずりを感じながらお過ごしいただけます。</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-coffee"></i>
+                <h3>こだわりの味</h3>
+                <p>厳選された食材と、熟練のシェフによる手作りメニューをお楽しみください。</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-heart"></i>
+                <h3>くつろぎの空間</h3>
+                <p>ゆったりとした時間の中で、特別なひとときをお過ごしください。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 本日のおすすめ -->
+    <section id="today-special" class="today-special">
+        <h2>本日のおすすめ</h2>
+        <div class="special-container">
+            <img src="images/today_sweets.jpg" alt="本日のおすすめデザート">
+            <div class="special-content">
+                <h3>自家製デザート</h3>
+                <p>手作りの焼きプリン</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- メニュー -->
+    <section id="menu" class="menu">
+        <h2>メニュー</h2>
+        <div class="menu-container">
+            <div class="menu-card">
+                <i class="fa-solid fa-mug-hot"></i>
+                <h3>ドリンク</h3>
+                <p>こだわりの焙煎コーヒーとハーブティー</p>
+            </div>
+            <div class="menu-card">
+                <i class="fa-solid fa-pizza-slice"></i>
+                <h3>石窯ピザ</h3>
+                <p>自家製のピザパンで焼き上げたピザ</p>
+            </div>
+            <div class="menu-card">
+                <i class="fa-solid fa-burger"></i>
+                <h3>バーガー</h3>
+                <p>自家製の和牛バーガー</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせフォーム -->
+    <section id="contact" class="contact">
+        <h2>お問い合わせ</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">メッセージ</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">送信</button>
+        </form>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Green Cafe</h3>
+                <p>〒123-4567<br>東京都緑区森の湖畔1-2-3</p>
+            </div>
+            <div class="footer-section">
+                <h3>営業時間</h3>
+                <p>平日: 10:00 - 20:00<br>土日祝: 9:00 - 21:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>フォローする</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Green Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- スクロールトップボタン -->
+    <button id="scroll-top" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
